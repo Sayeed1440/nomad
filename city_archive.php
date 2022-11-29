@@ -311,9 +311,6 @@
     <!-- footer -->
   
     <?php include'footer.php'; ?>
-
-
-
      <!-- read json data  -->
 
     
