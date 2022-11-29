@@ -1,0 +1,550 @@
+@font-face { font-family: BR Candor ; src: url('../font/Brink - BR Candor Regular.otf'); } 
+@font-face { font-family: BR CandorBlack; src: url('../font/Brink - BR Candor Black.otf');}
+@font-face { font-family: BR CandorBold; font-weight: bold; src: url('../font/Brink - BR Candor Bold.otf');}
+@font-face { font-family: BR CandorSemiBold; font-weight: bold; src: url('../font/Brink - BR Candor SemiBold.otf');}
+@font-face { font-family: BR CandorMedium; font-weight: bold; src: url('../font/Brink - BR Candor Medium.otf');}
+@font-face { font-family: BR CandorLight; font-weight: bold; src: url('../font/Brink - BR Candor Light.otf');}
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'BR Candor', sans-serif;
+}
+
+/* .row>*{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+} */
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* header  */
+.home{
+    background-color: #EEEEEE;
+}
+
+.header_box{
+    padding: 20px;
+}
+
+.header_box img{
+    width: 100%;
+    height: 40px;
+}
+
+.header_box_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 35px 20px 32px;
+}
+
+.head_top h1{
+    font-size: 16px;
+    color: #555555;
+    font-family: 'BR CandorSemiBold';
+    margin: 0;
+}
+
+.head_top p{
+    font-size: 12px;
+    color: #555555;
+    font-family: 'BR Candor';
+    margin: 0;
+    margin-top: 6px;
+}
+
+.head_top p a{
+    font-size: 12px;
+    color: #555555;
+}
+
+.admin_name{
+    margin-top: 10px;
+}
+
+.admin_name a{
+    padding: 8px 12px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555555;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.admin_name a:hover{
+    color: #555555 !important;
+}
+
+.admin_name ul{
+    border: 1px solid #AAAAAA;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0 0 20px 23px;
+    width: 182px;
+}
+
+.admin_name ul a{
+    padding: 0px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    color: #555555;
+}
+
+.admin_name ul a:hover{
+    background-color: #fff;
+}
+
+/* menu bar section  */
+.menu_box{
+    background-color: #fff; 
+}
+
+.menu_box h5{
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 32px 0 0 52px;
+}
+
+.menu_box h5 a{
+    font-size: 16px;
+    color: #555555;
+}
+
+.left_menu{
+    padding-bottom: 9px;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 0px 0 0 52px;
+}
+
+.left_menu li{
+    list-style-type: none;
+    margin-bottom: 11px;
+}
+
+.left_menu li a{
+    font-size: 16px;
+    color: #555555;
+}
+
+/* CITIES BOXES */
+.cities_box{
+    padding: 35px 26px 65px 32px;
+    background-color: #F6F8F9;
+    min-height: 100vh;
+}
+
+.add_city{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add_city input{
+    font-size: 18px;
+    color: #555555;
+    padding: 9px 0 10px 22px;
+    width: 323px;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+    height: 42px;
+    background-color: #fff;
+    box-shadow: none;
+    outline: none;
+}
+
+.add_city input::placeholder{
+    font-size: 18px;
+    color: #555555;
+}
+
+.add_button{
+    margin-top: 10px;
+}
+
+.add_button a{
+    padding: 13px 56px;
+    font-size: 16px;
+    color: #fff !important;
+    background-color: #555555;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.add_countries_modal .modal-header{
+    background-color: #EEEEEE;
+}
+
+.add_countries_modal .modal-header h5{
+    font-size: 20px;
+    color: #555555;
+}
+
+.btn-close:focus{
+    box-shadow: none !important;
+}
+
+.add_countries_modal .modal-header .btn-close{
+    border: 1px solid #393939;
+    background-color: #fff !important;
+    color: #393939;
+    border-radius: 20px;
+}
+
+.add_countries_modal_form label{
+    font-size: 16px;
+    color: #555555;
+    margin-top: 4px;
+}
+
+.add_countries_modal_form input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #333333;
+    border-radius: 0px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'BR Candor';
+    padding-left: 20px;
+}
+
+.add_countries_modal_form input::placeholder{
+    font-size: 16px;
+    color: #AAAAAA;
+    font-family: 'BR Candor';
+}
+
+.fileupload{
+    padding-top: 7px !important;
+    padding-left: 12px !important;
+}
+
+.add_countries_modal_form button{
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #555555;
+    padding: 13px 0;
+    text-align: center;
+    border-radius: 4px;
+    border: none !important;
+}
+
+.city_body{
+    width: 100%;
+    border: 1px solid #AAAAAA;
+    margin-top: 21px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.city_body table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.city_body table th{
+    padding: 20px 34px;
+}
+
+.city_body table td{
+    padding: 20px 34px;
+}
+
+.city_body table tr{
+    background-color: #fff;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.city_body table tr:first-child{
+    background-color: #F6F8F9;
+    border-bottom: none;
+}
+
+.city_body table tr:last-child{
+    border-bottom: none;
+}
+
+.city_body table tr input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 0px !important;
+    cursor: pointer;
+}
+
+.form-check-input:focus{
+    box-shadow: none !important;
+}
+
+.city_body table th{
+    font-size: 16px;
+    color: #555555;
+    font-family: 'BR Candor';
+    font-weight: 400;
+}
+
+.city_body table td{
+    font-size: 16px;
+    color: #555555;
+    font-family: 'BR Candor';
+    font-weight: 400;
+}
+
+.city_body table td a{
+    margin-right: 16px;
+}
+
+.city_body table td img{
+    color: #555555;
+    width: 26px;
+    height: 25px;
+}
+
+.city_checkbox{
+    width: 5%;
+}
+
+.country_name{
+    width: 25%;
+}
+
+.city_name{
+    width: 55%;
+}
+
+
+/* add city section  */
+.add_city_head{
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add_city_head li{
+    color: #555555;
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.add_city_head li a{
+    font-size: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 10px;
+    color: #555555;
+    margin-right: 14px;
+}
+
+.add_city_head a{
+    font-size: 20px;
+    color: #555555;
+}
+
+.add_city_head img{
+    width: 40px;
+    height: 40px;
+}
+
+.add_city_boxes{
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-top: 32px;
+    padding: 40px 32px;
+    background-color: #fff;
+}
+
+.add_city_boxes_details{
+    border: 1px solid #AAAAAA;
+    border-top: none;
+}
+
+.add_city_boxes_details h1{
+    font-size: 14px;
+    color: #555555;
+    margin: 0;
+    padding: 7px 0;
+}
+
+.add_city_forms{
+    padding: 8px 23px 40px 23px;
+}
+
+.add_city_forms label{
+    font-size: 14px;
+    color: #555555;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.add_city_forms input{
+    font-size: 16px;
+    color: #777777;
+    padding-left: 16px;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    height: 40px;
+}
+
+.add_city_forms textarea{
+    font-size: 16px;
+    color: #777777;
+    padding-left: 16px;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.add_city_forms input::placeholder{
+    font-size: 16px;
+    color: #777777;
+}
+
+.add_city_forms .form-select{
+    font-size: 16px;
+    color: #777777;
+    height: 40px;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+.form-select:focus{
+    box-shadow: none !important;
+    border: 1px solid #AAAAAA !important;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+}
+
+.add_city_form_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 9px 23px;
+    margin: 0;
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #AAAAAA;
+}
+
+.heading_delete_icon img{
+    width: 28px;
+}
+
+.add_city_boxes_details .btn_event{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 13px 20px;
+    border-radius: 8px;
+    background-color: #555555;
+    margin-left: 23px;
+    margin-bottom: 30px;
+}
+
+.add_city_boxes .btn_add_city_box{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 13px 20px;
+    border-radius: 8px;
+    background-color: #555555;
+    margin-top: 25px;
+}
+
+.add_city_boxes .btn_add_city_box i{
+    font-size: 16px;
+    margin-left: 25px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+/* edit profile  */
+.edit_profile{
+    padding: 0px;
+}
+
+.edit_profile input{
+    border-radius: 0px;
+}
+
+.edit_profile .btn_add_city_box{
+    margin-top: 0px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+.password_box{
+    position: relative;
+    width: 100%;
+}
+
+.password_change_box{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #AAAAAA;
+    font-size: 16px;
+}
+
+/* logout secion  */
+.logout_modal h1{
+    font-size: 24px;
+    color: #555555;
+    text-align: center;
+}
+
+.logout_btn{
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logout_btn a{
+    font-size: 16px;
+    color: #fff;
+    background-color: #555555;
+    padding: 13px 53px;
+    border-radius: 8px;
+}
+
+.logout_btn .apply_logout{
+    color: #fff;
+}
+
+.logout_btn .cancel_logout{
+    color: #555555;
+    background-color: #fff;
+    border: 1px solid #555555;
+}
+
+.logout_btn a:hover{
+    color: none;
+}
