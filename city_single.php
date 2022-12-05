@@ -1,5 +1,7 @@
 
-    <?php include'header.php'; ?>
+    <?php include'header.php';
+    	include 'citydata.php';
+    	 ?>
 
 
     <!-- carousel images -->
@@ -56,7 +58,7 @@
                         </div>
                         <div class="gdp_det">
                             <p>GDP per capita</p>
-                            <h3>&#36;42,456 / year</h3>
+                            <h3>&#36;<?= $gdp ?> / year</h3>
                         </div>
                     </div>
                     <div class="gdp_box gdp_box_bottom">
@@ -76,7 +78,7 @@
                         </div>
                         <div class="gdp_det">
                             <p>Tourists Now</p>
-                            <h3>11,823 People</h3>
+                            <h3><?= $tourism ?> People</h3>
                         </div>
                     </div>
                     <div class="gdp_box gdp_box_bottom">
