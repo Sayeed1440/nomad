@@ -12,7 +12,7 @@ if(isset($_GET['city']) && !empty($_GET['city'])){
 
 $url = "http://history.openweathermap.org/data/2.5/aggregated/year?lat=".$lat."&lon=".$lon."&appid=".$key;                                                                      
                                                                    
-// $result = curl($url);
+$result = curl($url); // complete weather data
 
 
 /*
