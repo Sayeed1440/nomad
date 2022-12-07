@@ -1,0 +1,215 @@
+@font-face { font-family: BR CandorBlack; src: url('../font/Brink - BR Candor Black.otf');}
+@font-face { font-family: BR CandorBold; font-weight: bold; src: url('../font/Brink - BR Candor Bold.otf');}
+@font-face { font-family: BR CandorSemiBold; font-weight: bold; src: url('../font/Brink - BR Candor SemiBold.otf');}
+@font-face { font-family: BR CandorMedium; font-weight: bold; src: url('../font/Brink - BR Candor Medium.otf');}
+@font-face { font-family: BR CandorLight; font-weight: bold; src: url('../font/Brink - BR Candor Light.otf');}
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'BR Candor', sans-serif;
+}
+
+/* faq section  */
+.banner4 .banner_inner h1{
+    color: #1d1d1d;
+    font-size: 32px;
+}
+
+.banner4 .banner_inner img{
+    width: 32px;
+    height: 32px;
+}
+
+.faq{
+    margin: 0;
+    padding: 80px 0;
+}
+
+.faq_left_mobile{
+    display: none;
+}
+
+.faq_left {
+    float: left;
+    border: 1px solid #d8d8d8;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+}
+  
+.faq_left li{
+    padding: 12px;
+    width: 100% !important;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    color: #1d1d1d;
+    font-family: 'BR CandorSemiBold';
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.faq_left .first_li{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.faq_left .last_li{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.faq_left img{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+  
+.faq_left li:hover {
+    background-color: #f1f6fc;
+}
+
+.faq_right{
+    width: 100%;
+}
+
+.faq_right .tabcontent {
+    padding: 0px 32px 40px 32px;
+    border: 1px solid #d8d8d8;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.faq_right .accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.faq_right .accordion-button:not(.collapsed){
+    color: #1d1d1d !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+
+.faq_right .accordion-item{
+    border: none !important;
+}
+
+.faq_right .accordion-button{
+    padding: 0px !important;
+    font-size: 20px !important;
+    font-family: 'BR CandorSemiBold';
+    margin-top: 32px;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../img/arrow_down.svg) !important;
+    height: 10px;
+}
+
+.accordion-button::after{
+    background-image: url(../img/arrow_down.svg) !important;
+    height: 100%;
+}
+
+.faq_right .accordion-collapse{
+    border-radius: 0px !important;
+    border: none !important;
+    margin-top: 24px;
+}
+
+.faq_right .accordion-collapse p{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'BR Candor';
+    color: #555555;
+}
+
+
+/* write to us  */
+.query{
+    padding-top: 80px;
+}
+
+.headline img{
+    width: 52px;
+}
+
+.query_form{
+    border-radius: 20px;
+    background-color: #f1f6fc;
+    padding: 40px;
+    margin-top: 26px;
+}
+
+.query_form .form-label{
+    font-size: 16px;
+    color: #5F6267;
+}
+
+.query_form .form-control{
+    font-size: 14px;
+    padding: 13px 16px;
+    color: #5F6267;
+    font-family: 'BR CandorMedium';
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    resize: none;
+}
+
+.query_form .form-control::placeholder{
+    font-size: 14px;
+    padding: 13px 16px;
+    color: #CDD4E0;
+    font-family: 'BR CandorMedium';
+}
+
+.query_form button{
+    border: none !important;
+    background-color: #FB6400;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 22px 0;
+    text-transform: uppercase;
+    font-family: 'BR Candor';
+    letter-spacing: 1px;
+    border-radius: 35px;
+}
+
+/* terms section  */
+.terms{
+    margin-top: 170px;
+    padding-bottom: 70px;
+}
+
+.terms_mobile_heading{
+    display: none !important;
+}
+
+.terms h2{
+    font-size: 20px;
+    font-family: 'BR Candor';
+    color: #1d1d1d;
+    margin-top: 30px;
+}
+
+.terms h3{
+    font-size: 18px;
+    font-family: 'BR CandorSemiBold';
+    color: #1d1d1d;
+    margin-top: 30px;
+}
+
+.terms p{
+    font-size: 16px;
+    font-family: 'BR Candor';
+    color: #1d1d1d;
+    margin-top: 20px;
+}

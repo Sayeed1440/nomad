@@ -1,0 +1,478 @@
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1140px !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+    /* navbar */
+    .navbar{
+        padding: 17px 0 !important;
+    }
+
+    .navbar-brand{
+        padding: 0 !important;
+    }
+
+    .navbar-brand img{
+        width: 110px;
+        height: auto;
+        padding: 0;
+    }
+    
+    .nav-link{
+        font-size: 12px !important;
+        text-align: center;
+        padding: 10px 15px !important;
+    }
+
+    .explore_nav_link{
+        display: none !important;
+    }
+
+    .nav-link.active{
+        display: block !important;
+    }
+
+    /* banner  */
+    .banner{
+        margin-top: 74px;
+    }
+
+    .banner_lap_img{
+        display: none !important;
+    }
+
+    .banner_mob_img{
+        display: block !important;
+    }
+
+    .banner2_img{
+        margin-top: 104px;
+    }
+
+    .banner2_img img{
+        width: 100%;
+        height: 106px;
+        border-radius: 10px;
+    }
+
+    .banner img{
+        height: 360px;
+        border-radius: 0px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .banner h1{
+        font-size: 26px;
+        margin-left: 20px;
+        margin-right: 10px;
+        line-height: 39px;
+        bottom: 20px;
+    }
+
+    .banner2_img .banner_inner{
+        bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .banner2_img h1{
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .banner2_img a{
+        font-size: 14px;
+    }
+    
+    .banner2_img span{
+        font-size: 14px;
+    }
+
+    /* popular section  */
+    .popular{
+        padding: 40px 0;
+    }
+
+    .owl-theme .owl-dots{
+        display: block;
+        margin-top: 16px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: #FB6400 !important;
+    }
+
+    .popular_box .popular_cont{
+        padding: 0 12px;
+    }
+
+    .cities_details .popular_cont{
+        padding: 0 12px;
+    }
+
+    /* countries name  */
+    .countries{
+        padding: 40px 0;
+    }
+
+    .headline{
+        font-size: 20px;
+    }
+
+    .countries_name{
+        justify-content: space-between;
+    }
+
+    .countries_name .coun_details:last-child{
+        display: none !important;
+    }
+    
+    .coun_details{
+        width: 104px;
+        height: 100px;
+    }
+
+    .coun_details img{
+        width: 100%;
+        padding: 10px 20px 16px 20px;
+    }
+    
+    .coun_details h3{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* explore cities  */
+    .explore_cities{
+        padding: 40px 0;
+    }
+
+    .head_dtails .view_all .view_cities{
+        display: none;
+    }
+
+    .head_dtails .view_all .Mobile_view{
+        display: inline;
+        font-size: 16px;
+        color: #FB6400;
+        border-bottom: 1px solid #FB6400;
+        font-family: 'BR Candor';
+    }
+
+    /* cities flter  */
+    .head_dtails2 .input-group{
+        width: 100%;
+        position: relative;
+    }
+
+    .head_dtails2 .input-group .form-outline input{
+        font-size: 12px;
+        padding: 11px 52px;
+        border-radius: 20px;
+    }
+
+    .head_dtails2 .input-group .form-outline input::placeholder{
+        font-size: 12px;
+    }
+
+    .head_dtails2 .btn_search{
+        position: absolute;
+        top: 9px;
+        left: 20px;
+        width: 24px;
+    }
+
+    .head_dtails2 .btn_search img{
+        height: 24px;
+        width: 24px;
+    }
+
+    .city_filter_top{
+        display: none;
+    }
+
+    .city_filter_mobile{
+        display: block;
+    }
+
+    .city_filter_mobile{
+        width: 100%;
+        border: 1px solid #FB6400;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: -5px;
+        left: 0;
+        z-index: 9;
+        background-color: #fff;
+    }
+
+    .city_filter_mobile a{
+        font-size: 16px;
+        padding: 0px;
+        border: none;
+        padding: 15px 0;
+    }
+
+    .city_filter_mobile .filter_left{
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        padding-right: 18%;
+        border-right: 1px solid #FB6400;
+    }
+    
+    .city_filter_mobile .filter_right{
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+
+    /* cities filter end  */
+
+    .cities_box{
+        margin-top: 8px;
+    }
+
+    .cities_details{
+        margin: 8px 0;
+    }
+
+    /* famous clubs  */
+    .famous_clubs{
+        padding: 40px 0;
+    }
+
+    .famous_box{
+        margin-top: 24px;
+    }
+
+    .famous_box .item img{
+        height: auto;
+    }
+
+    /* nomad cyclist */
+    .nomadcyclist{
+        padding: 40px 0;
+    }
+
+    .nomadcyclist_box{
+        margin-top: 16px;
+    }
+
+    .nomadcyclist .item img{
+        height: auto;
+    }
+
+    /* footer */
+    footer{
+        padding: 40px 0;
+        position: relative;
+        z-index: 99;
+    }
+
+    .footer{
+        justify-content: space-evenly;
+    }
+
+    .footer_logo{
+        margin-top: 42px;
+    }
+
+    .footer a{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .footer a img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer .line{
+        height: 40px;
+    }
+
+    /* copyright */
+    .copyright{
+        padding: 16px 0;
+        position: relative;
+        z-index: 99;
+        background-color: #fff;
+    }
+
+    .copyright_box{
+        justify-content: center;
+    }
+
+    .policy{
+        margin-bottom: 10px;
+    }
+
+    /* nomad_modal box  */
+    .nomad_left{
+        display: none;
+    }
+
+    .nomad_right{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nomad_modal_form{
+        padding: 0;
+    }
+
+    .nomad_modal_box .modal-content{
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .modal-dialog{
+        position: fixed !important;
+    }
+
+    .w3-animate-bottom{
+        position: fixed !important;
+        bottom: 0px !important;
+        left: 0px !important;
+    }
+
+    .nomad_modal_form button{
+        font-size: 16px;
+    }
+
+    /* famous modal start  */
+    .famous_modal_box .w3-animate-bottom{
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .famous_details_box{
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+    .famous_body_bottom{
+        padding: 20px;
+    }
+
+    .famous_body_btn{
+        margin-bottom: 10px !important;
+        margin-top: 20px !important;
+    }
+
+    .famous_body_left img{
+        width: 112px;
+        height: 112px;
+        margin-right: 12px;
+        margin-top: 15px;
+    }
+
+    .famous_body_right h2{
+        font-size: 16px;
+    }
+    
+    .famous_body_right p{
+        font-size: 14px;
+    }
+
+    .famous_body_right h3{
+        margin-top: 8px;
+    }
+    
+    .famous_body_right h3 img{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    
+    .famous_body_right h3 span{
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .famous_body_bottom p{
+        font-size: 14px;
+    }
+    
+    .famous_body_btn{
+        margin-top: 20px !important;
+    }
+    
+    .famous_body_btn a{
+        font-size: 16px;
+        padding: 12px 20px;
+        border-radius: 20px;
+    }
+
+    /* filter modal Mobile */
+    .filter_modal_mobile .modal-dialog{
+        width: 100% !important;
+        margin-right: 0px;
+        margin-left: 0px;
+        transition: 0s !important;
+    }
+
+    .filter_modal_mobile .modal-content{
+        border-radius: 0px;
+        border: 1px solid #CDD4E0;
+        width: 100%;
+        height: 60vh; 
+    }
+
+    .filter_modal_mobile .filter_modal_header{
+        padding: 20px 32px !important;
+        width: 100% !important;
+        top: 40vh;
+    }
+
+    .sort_modal{
+        padding: 20px !important;
+    }
+    
+    .sort_modal ul{
+        padding: 0px !important;
+        border-radius: 20px;
+    }
+
+    .filter_right_dropdown{
+        border: none !important;
+    }
+
+    .sort_modal ul li a{
+        padding: 8px 12px !important;
+        font-size: 14px;
+        color: #333333;
+        border-radius: 20px;
+    }
+
+    .sort_modal ul .sort_1{
+        background-color: #f1f6fc;
+    }
+
+    /* .sort_modal ul .sort_2{
+        border-bottom-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+    } */
+
+    .sort_mobile .modal-content{
+        border-radius: 0px;
+        border: 1px solid #CDD4E0;
+        width: 100%;
+        height: 43vh;
+    }
+
+    .sort_mobile .filter_modal_header{
+        padding: 20px 32px !important;
+        width: 100% !important;
+        /* top: 67vh; */
+    }
+
+   
+}

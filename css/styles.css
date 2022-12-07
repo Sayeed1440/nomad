@@ -1,0 +1,965 @@
+@font-face { font-family: BR Candor ; src: url('../font/Brink - BR Candor Regular.otf'); } 
+@font-face { font-family: BR CandorBlack; src: url('../font/Brink - BR Candor Black.otf');}
+@font-face { font-family: BR CandorBold; font-weight: bold; src: url('../font/Brink - BR Candor Bold.otf');}
+@font-face { font-family: BR CandorSemiBold; font-weight: bold; src: url('../font/Brink - BR Candor SemiBold.otf');}
+@font-face { font-family: BR CandorMedium; font-weight: bold; src: url('../font/Brink - BR Candor Medium.otf');}
+@font-face { font-family: BR CandorLight; font-weight: bold; src: url('../font/Brink - BR Candor Light.otf');}
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'BR Candor', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* nav-bar */
+.navbar{
+    margin: 0;
+    padding: 26px 0 !important;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: #fff;
+}
+
+.navbar-brand img{
+    width: 177px;
+    height: 39px;
+}
+
+.nav-link {
+    font-family: 'BR CandorSemiBold', sans-serif;
+    font-size: 18px;
+    border: 1px solid #FB6400;
+    color: #FB6400 !important;
+    padding: 15px 31px !important;
+    margin: 0;
+    margin-left: 20px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.nav-link.active{
+    color: #fff !important;
+    background-color: #FB6400;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+/* banner  */
+.banner{
+    margin-top: 170px;
+    position: relative;
+}
+
+.banner_mob_img{
+    display: none !important;
+}
+
+.banner2_img{
+    margin-top: 170px;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+}
+
+.banner2_img img{
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.banner h1{
+    position: absolute;
+    bottom: 50px;
+    margin-left: 42px;
+    color: #fff;
+    font-size: 42px;
+    text-transform: capitalize;
+    font-family: 'BR CandorBold',sans-serif;
+    letter-spacing: 1px;
+}
+
+.banner2_img .banner_inner{
+    position: absolute;
+    bottom: 32px;
+    margin-left: 32px;
+}
+
+.banner2_img h1{
+    color: #fff;
+    font-size: 42px;
+    text-transform: capitalize;
+    font-family: 'BR CandorBold',sans-serif;
+    letter-spacing: 1px;
+}
+
+.banner2_img a{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'BR Candor',sans-serif;
+}
+
+.banner2_img span{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'BR Candor',sans-serif;
+}
+
+/* popular cities */
+.popular{
+    padding: 80px 0;
+}
+
+.headline{
+    font-size: 28px;
+    color: #1D1D1D;
+    font-family: 'BR CandorSemiBold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.headline span{
+    border: 1px solid #74ADF7;
+    background-color: #74ADF7;
+    border-radius: 16px;
+    color: #fff;
+    padding: 5px;
+}
+
+.popular_box{
+    margin-top: 20px;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+    display: none;
+}
+
+.popular_box .item .owl_img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.popular_box .popular_cont{
+    padding: 0 30px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.popular_cont h3{
+    font-family: 'BR Candor';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pop_details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.pop_details_box{
+    font-family: 'BR CandorLight', sans-serif !important;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.popular_box .item .pop_details_box img{
+    width: 20px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+/* top countries */
+.countries{
+    margin: 0;
+    padding: 80px 0;
+    background-color: #E5EDF7;
+}
+
+.countries_name{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coun_details{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.coun_details img{
+    width: 100%;
+    padding: 30px 40px 20px 40px;
+}
+
+.coun_details h3{
+    font-size: 24px;
+    font-family: 'BR CandorSemiBold';
+    text-align: center;
+    color: #1d1d1d;
+}
+
+/* explore cities */
+.explore_cities{
+    padding: 80px 0;
+}
+
+.head_dtails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head_dtails .view_all{
+    margin-top: 15px;
+}
+
+.head_dtails .view_all .view_cities{
+    font-family: 'BR Candor';
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 1px solid #FB6400;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #FB6400;
+    color: #fff;
+    border-radius: 25px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.head_dtails .view_all .Mobile_view{
+    display: none;
+}
+
+/* cities filter  */
+
+.head_dtails2 .input-group{
+    width: 39%;
+    margin: 0;
+    position: relative;
+}
+
+.explore_cities .head_dtails2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.head_dtails2 .input-group .form-outline{
+    width: 100%;
+}
+
+.head_dtails2 .input-group .form-outline input{
+    font-size: 16px;
+    color: #1D1D1D;
+    padding: 10px 24px;
+    margin: 0;
+    border-radius: 15px;
+    letter-spacing: 1px;
+}
+
+.head_dtails2 .input-group .form-outline input::placeholder{
+    font-size: 16px;
+    color: #777777;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.head_dtails2 .btn_search{
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    border: none;
+    background-color: #fff;
+}
+
+.head_dtails2 .btn_search img{
+    height: 20px;
+    width: 20px;
+}
+
+.city_filter{
+    margin-top: 10px;
+    padding: 0;
+}
+
+.city_filter a{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FB6400;
+    border: 1px solid #FB6400;
+    margin: 0px;
+    padding: 13px 40px;
+    cursor: pointer;
+}
+
+.city_filter a:hover{
+    color: #FB6400;
+}
+
+.city_filter .filter_left{
+    margin-right: -5px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.city_filter .filter_right{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* cities filter  end*/
+
+.cities_box{
+    margin-top: 12px;
+}
+
+.cities_details{
+    position: relative;
+    margin-top: 20px;
+}
+
+.cities_details .cities_img{
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.cities_details .popular_cont{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    padding: 0 30px;
+}
+
+.cities_details .popular_cont .pop_details_box img{
+    width: 20px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+
+/* famous clubs  */
+.famous_clubs{
+    margin: 0;
+    padding: 80px 0;
+    background-color: #E5EDF7;
+}
+
+.famous_box{
+    margin-top: 32px;
+}
+
+.famous_box .item{
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.famous_box .item img{
+    width: 100%;
+    border-radius: 15px;
+    height: 192px;
+}
+
+.famous_box .item h3{
+    margin: 0;
+    margin-top: 24px;
+    font-family: 'BR CandorBold';
+    font-size: 18px;
+    color: #1D1D1D;
+}
+
+.famous_box .item p{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #1D1D1D;
+}
+
+.famous_box .item h5{
+    margin-top: 12px;
+}
+
+.famous_box .item h5 span{
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #74ADF7;
+    background-color: #74ADF7;
+    padding: 10px;
+    font-family: 'BR CandorLight';
+    border-radius: 20px;
+}
+
+/* nomad cyclist */
+.nomadcyclist{
+    margin: 0;
+    padding: 80px 0;
+}
+
+.headline2{
+    font-size: 28px;
+    color: #FB6400;
+    font-family: 'BR CandorSemiBold';
+}
+
+.nomadcyclist_box{
+    margin-top: 24px;
+}
+
+.nomadcyclist .item img{
+    width: 100%;
+    height: 280px;
+    border-radius: 16px;
+}
+
+footer{
+    margin: 0;
+    padding: 60px 0;
+    background-color: #1D1D1D;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer a{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.footer .instagram:hover{
+    background-color: #E4405F;
+    transition: 0.5s ease-out;
+}
+
+.footer .facebook:hover{
+    background-color: #4267B2;
+    transition: 0.5s ease-out;
+}
+
+.footer .youtube:hover{
+    background-color: #FF0000;
+    transition: 0.5s ease-out;
+}
+
+.footer .tiktok:hover{
+    background-color: #EE1D52;
+    transition: 0.5s ease-out;
+}
+
+.footer a img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer .line{
+    height: 50px;
+}
+
+.footer_logo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer_logo img{
+    height: 46px;
+}
+
+/* copyright */
+.copyright{
+    margin: 0;
+    padding: 25px 0;
+    background-color: #fff;
+}
+
+.copyright_box{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+.copy_text p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #1D1D1D;
+}
+
+.policy a{
+    font-size: 14px;
+    color: #1D1D1D;
+    margin-left: 32px;
+}
+
+/* become nomad modal */
+.w3-animate-bottom{
+    margin-top: 16vh;
+}
+
+.nomad_modal_box .modal-content{
+    border-radius: 20px;
+    width: 872px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nomad_modal_box .modal-header{
+    border-bottom: none !important;
+    padding: 0px;
+    justify-content: right;
+}
+
+.nomad_modal_box .modal-header .btnclose{
+    height: 32px;
+    width: 32px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
+}
+
+.nomad_modal_box .modal-header .btnclose img{
+    width: 100%;
+}
+
+.nomad_modal_box .modal-body{
+    padding: 0;
+}
+
+.nomad_modal_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+}
+
+.nomad_left{
+    width: 458px;
+    padding: 45px;
+    background-color: #F1F6FC;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+
+.nomad_left .cycle_imoji{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.nomad_left h1{
+    margin: 0;
+    font-family: 'Br CandorBold';
+    font-size: 30px;
+    color: #1D1D1D;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.nomad_left h1 span{
+    border: 1px solid #74ADF7;
+    background-color: #74ADF7;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Br CandorBold';
+    font-size: 32px;
+}
+
+.nomad_left p{
+    font-size: 20px;
+    color: #1D1D1D;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.nomad_left ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.nomad_left ul li{
+    font-size: 18px;
+    color: #1d1d1d;
+    margin-top: 24px;
+}
+
+.nomad_left ul li img{
+    width: 25px;
+    margin: 0;
+    margin-right: 12px;
+}
+
+.nomad_right{
+    width: 414px;
+    padding: 24px;
+}
+
+.nomad_modal_form{
+    padding: 30px 15px 40px 15px;
+}
+
+.nomad_modal_form h2{
+    font-size: 24px;
+    font-family: 'BR CandorSemiBold';
+    color: #FB6400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.nomad_modal_form form{
+    margin: 0;
+    padding: 0;
+}
+
+.nomad_modal_form label{
+    font-size: 16px;
+    color: #1D1D1D;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.nomad_modal_form input{
+    padding: 13px 16px;
+    font-size: 14px;
+    color: #5F6267;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    font-family: 'BR CandorMedium';
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+    border-color: #D8D8D8;
+}
+
+.nomad_modal_form input::placeholder{
+    font-size: 14px;
+    color: #CDD4E0;
+    letter-spacing: 1px;
+    font-family: 'BR CandorLight';
+}
+
+.nomad_modal_form button{
+    margin-top: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    text-align: center;
+    border: 1px solid #FB6400;
+    background-color: #FB6400;
+    color: #fff;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.nomad_modal_form button:hover{
+    border: 1px solid #FB6400;
+    background-color: #FB6400 !important;
+    color: #fff;
+}
+
+.modal-backdrop.show{
+    background-color: #FB6400;
+    opacity: 0.3;
+}
+
+/* famous modal strat  */
+.famous_modal_box .w3-animate-bottom{
+    border-radius: 25px;
+    margin-top: 18vh;
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.famous_modal_box .modal-body{
+    padding: 0px;
+}
+
+.famous_details_box{
+    background-color: #E5EDF7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.famous_body_left img{
+    width: 164px;
+    height: 164px;
+    border-radius: 10px;
+    margin-right: 32px;
+}
+
+.famous_body_right{
+    width: 100%;
+}
+
+.famous_body_right .modal-header{
+    padding: 0;
+    border-bottom: none;
+    justify-content: right;
+}
+
+.famous_body_right .modal-header .btnclose{
+    height: 32px;
+    width: 32px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
+}
+
+.famous_body_right h2{
+    font-size: 20px;
+    font-family: 'BR CandorSemiBold';
+    color: #1D1D1D;
+    margin: 0;
+}
+
+.famous_body_right p{
+    font-size: 18px;
+    color: #333333;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.famous_body_right h3{
+    margin-top: 16px;
+}
+
+.famous_body_right h3 img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.famous_body_right h3 span{
+    border: 1px solid #74ADF6;
+    background-color: #74ADF6;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.famous_body_bottom{
+    padding: 40px;
+}
+
+.famous_body_bottom p{
+    font-size: 18px;
+    color: #1D1D1D;
+    letter-spacing: 1px;
+}
+
+.famous_body_btn{
+    margin-top: 40px !important;
+}
+
+.famous_body_btn a{
+    font-size: 18px;
+    padding: 15px 40px;
+    border: 1px solid #FB6400;
+    background-color: #FB6400;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.famous_body_btn a:hover{
+    color: #fff;
+}
+
+/* filter modal  */
+.filter_modal .modal-dialog{
+    margin: 0px;
+    margin-left: auto;
+    width: 376px;
+    padding-right: 0px;
+    margin-right: -20px;
+    height: 100%;
+}
+
+.filter_modal .modal-content{
+    margin-top: 0px;
+    border-radius: 0px;
+    border: 1px solid #CDD4E0;
+}
+
+.filter_modal_header{
+    padding: 20px 32px !important;
+    border-bottom: 1px solid #CDD4E0;
+    background-color: #F1F6FC;
+    width: 376px;
+    /* position: fixed; */
+    top: 0px;
+    z-index: 9;
+}
+
+.filter_modal_header h5{
+    font-size: 24px;
+    color: #1D1D1D;
+    font-family: 'BR CandorSemiBold';
+}
+
+.filter_modal_header button{
+    border: none;
+    background-color: #F1F6FC;
+}
+
+.filter_modal_header button img{
+    width: 32px;
+}
+
+.filter_modal_body{
+    padding: 0!important;
+    margin-top: 15px;
+}
+
+.filter_modal_details{
+    padding: 32px;
+    border-bottom: 1px solid #CDD4E0;
+}
+
+.filter_modal_details h2{
+    font-size: 20px;
+    color: #1D1D1D;
+    font-family: 'BR Candor';
+    margin: 0;
+}
+
+.filter_countries{
+    border: 1px solid #CDD4E0;
+    margin-top: 12px;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.filter_countries span{
+    font-size: 18px;
+    color: #1D1D1D;
+    border: 1px solid #CDD4E0;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #F1F6FC;
+    margin-right: 18px;
+}
+
+.filter_countries span button{
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #000;
+    margin-left: 8px;
+}
+
+.filter_check_box .form-check-input{
+    margin-top: 20px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #CDD4E0;
+}
+
+.form-check-input:checked{
+    background-color: #FB6400 !important;
+    border: 1px solid #FB6400 !important;
+}
+
+.form-check-input:focus{
+    box-shadow: none !important;
+}
+
+.filter_check_box .form-check-label{
+    margin-top: 20px;
+    margin-left: 12px;
+    font-family: 'BR Candor';
+    font-size: 18px;
+    color: #1D1D1D;
+}
+
+.filter_right_dropdown{
+    padding: 32px 0px !important;
+    margin-top: 10px !important;
+    border: 1px solid #CDD4E0 !important;
+    border-radius: 20px !important;
+}
+
+.filter_right_dropdown li a{
+    font-size: 18px;
+    color: #1D1D1D;
+    padding: 7px 31px;
+    border: none;
+    text-transform: capitalize;
+}
+
+.filter_right_dropdown li a:hover{
+    color: #1D1D1D;
+    background-color: #F1F6FC;
+}
+
+.city_filter_mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
