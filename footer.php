@@ -286,38 +286,113 @@ $("#form1").autocomplete({
    
 
         <script type="text/javascript">
-           fetch("cities.json")
-                .then(response => response.json())
-                .then(data => {
-                    for (var i = 0; i<9; i++){           //for (var i = 0; i<data.length; i++)
+
+            // const container = document.querySelector('#dataJson2');
+            // // get the images
+ 
+            //     fetch('cities.json')
+            //     .then(response=>response.json())
+            //     .then(data=>{
+            //         for (var i = 0; i<10; i++){
+            //         let name = data[i].name;
+            //              let country = data[i].country;
+            //              let lat = data[i].lat;
+            //              let lng = data[i].lng;
+                    
+            //                 document.querySelector("#dataJson").innerHTML += `
+                                
+            //                      <div class="col-md-6 col-lg-4 col-sm-6">
+            //                          <div class="cities_details">
+            //                              <a href="city_single.php">
+            //                                  <img class="cities_img" src="img/IndiaPortrait2.jpg" alt="cities_imges">
+            //                                  <div class="popular_cont">
+            //                                      <h3>${name}, ${country}</h3>
+            //                                      <div class="pop_details">
+            //                                          <div class="pop_details_box"><img src="img/cloud.svg" alt="cloud"> 23&deg;C</div>
+            //                                          <div class="pop_details_box"><img src="img/club.svg" alt="club"> Clubs</div>
+            //                                          <div class="pop_details_box"><img src="img/routes.svg" alt="routes"> Routes</div>
+            //                                      </div>
+            //                                  </div>
+            //                              </a>
+            //                          </div>
+            //                     </div>
+                           
+            //                 `;
+            //             }
+                
+            //         })
+            
+            // loadData();
+
+
+
+
+
+
+
+
+            const container = document.querySelector('#dataJson');
+
+            function loadData(numData = 9){
+            let i=0;
+                while(i < numData){
+                    fetch('cities.json')
+                    .then(response=>response.json())
+                    .then(data=>{
+                        // console.log(data.message)
                         let name = data[i].name;
                         let country = data[i].country;
-                    
-                            document.querySelector("#dataJson").innerHTML += `
-                            
-                                <div class="col-md-6 col-lg-4 col-sm-6">
+                        let lat = data[i].lat;
+                        let lng = data[i].lng;
+
+                        const dataFetch =  document.querySelector('#dataJson');
+
+                        dataFetch.innerHTML += `
+                             
+                            <div class="col-md-6 col-lg-4 col-sm-6">
                                     <div class="cities_details">
                                         <a href="city_single.php">
-                                            <img class="cities_img" src="img/IndiaPortrait2.jpg" alt="cities_imges">
-                                            <div class="popular_cont">
-                                                <h3>${name}, ${country}</h3>
-                                                <div class="pop_details">
-                                                    <div class="pop_details_box"><img src="img/cloud.svg" alt="cloud"> 23&deg;C</div>
-                                                    <div class="pop_details_box"><img src="img/club.svg" alt="club"> Clubs</div>
-                                                    <div class="pop_details_box"><img src="img/routes.svg" alt="routes"> Routes</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                             <img class="cities_img" src="img/IndiaPortrait2.jpg" alt="cities_imges">
+                                             <div class="popular_cont">
+                                                 <h3>${name}, ${country}</h3>
+                                                 <div class="pop_details">
+                                                     <div class="pop_details_box"><img src="img/cloud.svg" alt="cloud"> 23&deg;C</div>
+                                                     <div class="pop_details_box"><img src="img/club.svg" alt="club"> Clubs</div>
+                                                     <div class="pop_details_box"><img src="img/routes.svg" alt="routes"> Routes</div>
+                                                 </div>
+                                             </div>
+                                         </a>
+                                     </div>
                                 </div>
                            
-                                `;
-                    }
-                })
+                        `;
+
+                        container.appendChild(dataFetch)
+                        })
+                    i++;
+                    }   
+                }
+
+            loadData();
 
 
-                // search and filter data 
-                $(document).ready(function(){
+
+
+
+
+
+            // listen for scroll event and load more images if we reach the bottom of window
+            window.addEventListener('scroll',()=>{
+                console.log("scrolled", window.scrollY) //scrolled from top
+                console.log(window.innerHeight) //visible part of screen
+                if(window.scrollY + window.innerHeight >= document.documentElement.scrollHeight){
+                    loadData();
+                }
+            })
+
+
+            // search and filter data 
+            $(document).ready(function(){
                     $("#form1").on("keyup", function() {
                         var value = $(this).val().toLowerCase();
                         $("#dataJson .col-md-6").filter(function() {
@@ -325,5 +400,6 @@ $("#form1").autocomplete({
                         });
                     });
                 });
+
         </script>
 
